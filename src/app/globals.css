@@ -2,28 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* background: hsla(0, 0%, 7%, 1);
+
+  background: linear-gradient(45deg, hsla(0, 0%, 7%, 1) 0%, hsla(0, 2%, 26%, 1) 100%);
+
+  background: -moz-linear-gradient(45deg, hsla(0, 0%, 7%, 1) 0%, hsla(0, 2%, 26%, 1) 100%);
+
+  background: -webkit-linear-gradient(45deg, hsla(0, 0%, 7%, 1) 0%, hsla(0, 2%, 26%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#131313", endColorstr="#454242", GradientType=1 ); */
+
+  background: linear-gradient(to right, #0b0b0b, #171717,#595252);
+  
+  color: #f0f0f1;
+
 }
 
 @layer utilities {
@@ -31,3 +26,85 @@ body {
     text-wrap: balance;
   }
 }
+
+.home-page {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+
+}
+
+
+.home-page h1 {
+  font-size: 7em; 
+  /* margin: 0.5em 0; */
+  font-weight: 600;
+}
+
+.home-page h3 {
+  font-size: 1.8em; 
+  /* margin: 0.5em 0;  */
+}
+
+.home-page nav {
+  margin-top: 1em; 
+}
+
+.home-page nav a {
+  margin: 0 1em; 
+  text-decoration: none;
+  color: white; 
+  font-weight: bold;
+}
+
+.home-nav {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.home-nav li {
+  margin: 0 1em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  font-size: 1.2rem;
+}
+
+.home-nav li:hover {
+  background-color: #d3d3d3;
+  color: black; 
+  transform: scale(1.1);
+}
+
+.social-icons{
+  list-style: none;
+  padding: 0;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: 1em;
+}
+
+.social-icons li{
+  margin: 0 1em;
+  color: white;
+  font-size: 3.5em;
+  transition: transform 0.3s;
+}
+
+.social-icons li:hover{
+  transform: translateY(-5px);
+}
+
+
