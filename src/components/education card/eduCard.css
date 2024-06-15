@@ -1,0 +1,56 @@
+.card-container {
+    display: flex;
+    align-items: center;
+    /* background-color: #333; */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* max-width: 800px;  */
+    margin: 20px 20px;
+}
+
+.image-container {
+    flex: 0 0 450px; /* Adjusted for a bigger image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.school-image {
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.school-name {
+    font-size: 3em;
+    font-weight: 1000;
+    margin: 0;
+}
+
+.degree {
+    font-size: 2em;
+    font-weight: 500
+}
+
+.date-duration {
+    font-size: 1.4em; /* Adjusted for bigger text */
+    /* margin: 10px 0; */
+}
+
+.description {
+    font-size: 1.2em; /* Adjusted for bigger text */
+    margin: 10px 20px 0;
+    line-height: 1.5;
+}
+
+.description li {
+    margin-bottom: 5px;
+    list-style: disc;
+}

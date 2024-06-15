@@ -1,0 +1,46 @@
+/* Style for the navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    /* background-color: #1c1c1c; */
+}
+
+.navbar-logo{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar-list li {
+    color: white;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-list li:hover {
+    background-color: #333;
+}
+
+.navbar-item.active:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+}
