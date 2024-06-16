@@ -1,6 +1,29 @@
-.page-title{
+.edu-page {
+    display: flex; /* Use flexbox for the main container */
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it takes at least the full viewport height */
+  }
+
+.edu-content {
+    margin-top: 20px;
+    flex: 1; /* This makes sure the main content takes the remaining space */
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: column;
+    
+}
+
+.page-title {
     font-size: 6.5rem;
     font-weight: 900;
     margin-left: 30px;
-    /* text-decoration: underline; */
+    position: relative; /* Add this to position the ::after element correctly */
+}
+
+.page-title::after {
+    content: "";
+    display: block;
+    width: 150px; /* Adjust the width as needed */
+    height: 10px; /* Adjust the height as needed */
+    background-color: white; /* Set the desired color for the rectangle */
+    margin-top: 0px; /* Adjust the space between the title and the rectangle */
 }
