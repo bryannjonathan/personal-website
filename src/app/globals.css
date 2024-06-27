@@ -16,6 +16,11 @@ body {
   color: #f0f0f1;
 }
 
+.web-page{
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+
 .home-page {
   display: flex; /* Use flexbox for the main container */
   flex-direction: column;
@@ -38,7 +43,7 @@ body {
 }
 
 .home-page h3 {
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 .home-page nav {
@@ -68,11 +73,19 @@ body {
   font-weight: bold;
   border-radius: 20px;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .home-nav li:hover {
   background-color: #d3d3d3;
   color: black;
   transform: scale(1.1);
+}
+
+/* Project section */
+.proj-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjusted for smaller cards */
+  gap: 16px;
+  padding: 16px;
 }

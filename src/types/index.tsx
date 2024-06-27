@@ -17,3 +17,21 @@ export interface eduProps{
     imgUrl: string;
     achievements: string[];
 }
+
+export interface expProps{
+    place: string,
+    position: string,
+    startDate: string,
+    endDate?: string,
+    desc: string[],
+}
+
+export interface projProps{
+    name: string,
+    imgUrl: string,
+    subtitle?: string,
+    applink?: string,
+    github?: string,
+    // desc?: string[],
+}
+

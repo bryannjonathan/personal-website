@@ -1,0 +1,45 @@
+.exp-card-container {
+    display: flex;
+    align-items: center;
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto; /* Center the card horizontally */
+}
+
+.exp-text-container {
+    width: 100%; /* Full width container */
+}
+
+.position-place {
+    font-size: 2em; /* Larger font size for the combined text */
+    font-weight: 700; /* Bold font weight */
+    margin: 0 0 10px 0; /* Margin adjustments */
+}
+
+.position {
+    font-size: 1em;
+    font-weight: 700; /* Bold font weight for position */
+}
+
+.place {
+    font-size: 0.7em;
+    font-weight: 500; /* Semi-bold font weight for place */
+}
+
+.exp-duration {
+    font-size: 1em; /* Adjusted font size */
+    font-weight: 300; /* Light font weight */
+    margin: 0 0 15px 0; /* Margin adjustments */
+}
+
+.exp-desc {
+    font-size: 1em; /* Adjusted font size */
+    margin: 0;
+    padding-left: 20px; /* Indentation for bullets */
+    list-style-type: disc; /* Use disc for bullets */
+}
+
+.description li {
+    margin-bottom: 5px; /* Space between items */
+}

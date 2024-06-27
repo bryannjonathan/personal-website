@@ -11,7 +11,7 @@ export default function Education(){
 
 
             <Navbar />
-            <h1 className="page-title">Education</h1>
+            <h1 className="page-title">EDUCATION</h1>
             <div className="edu-content">
                 {schoolList.map((school,index) => (
                     <EducationCard 
