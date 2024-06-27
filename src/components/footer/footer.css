@@ -22,8 +22,28 @@
   color: white;
   font-size: 3.5em;
   transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.social-text {
+  font-size: 0.35em;
+  margin-left: 0.5em; /* Space between icon and text */
 }
 
 .social-icons li:hover {
   transform: translateY(-5px);
+  cursor: pointer;
+}
+
+
+.toast-notif{
+  font-weight: 600;
 }

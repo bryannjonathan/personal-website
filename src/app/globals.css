@@ -82,10 +82,74 @@ body {
   transform: scale(1.1);
 }
 
-/* Project section */
+/* CV DOWNLOAD BUTTON */
+/* CV DOWNLOAD BUTTON */
+.cv-button {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin: 0 1em;
+  padding: 0.6em 1em;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  font-size: 1.5rem;
+  display: inline-flex; /* Added to align the button inline with the text */
+  align-items: center; /* Ensures vertical alignment */
+}
+
+.cv-button svg {
+  margin-left: 0.5em; /* Add space between the text and the icon */
+}
+
+.cv-button:hover {
+  background-color: #d3d3d3;
+  color: black;
+  transform: scale(1.1);
+}
+
+
+.page-title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  position: relative; 
+  text-align: center;
+}
+
+.page-title::after {
+  content: "";
+  display: block;
+  width: 150px; 
+  height: 10px; 
+  background-color: white;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto
+}  
+
+/* EDUCATION SECTION */
+.edu-page {
+  display: flex; /* Use flexbox for the main container */
+  flex-direction: column;
+ 
+}
+
+.edu-content {
+  margin-top: 20px;
+  flex: 1; /* This makes sure the main content takes the remaining space */
+  display: flex; /* Use flexbox for centering content */
+  flex-direction: column;
+  
+}
+
+/* PROJECT SECTION */
 .proj-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjusted for smaller cards */
   gap: 16px;
   padding: 16px;
 }
+
+/* EXPERIENCE SECTION */

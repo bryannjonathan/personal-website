@@ -2,15 +2,18 @@
 
 import { useRouter } from "next/navigation";
 
+// components
 import Footer from "@/components/footer/footer";
-import schoolList from "./education/educationList"
-import EducationCard from "@/components/education card/educationCard";
-import projList from "./project/projList"
-import expList from "./expList"
 import ExpCard from "@/components/experience card/expCard";
-
-import "./education.css"
 import ProjectCard from "@/components/project/projectCard";
+import EducationCard from "@/components/education card/educationCard";
+
+// list
+import schoolList from "./lists/educationList"
+import projList from "./lists/projList"
+import expList from "./lists/expList"
+
+import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
   const router = useRouter();
@@ -28,11 +31,16 @@ export default function Home() {
           <h3>Final-year Computer Science Student at The Chinese University of Hong Kong, Shenzhen</h3>
 
           {/* TODO: edit where the navbar goes */}
-          <ul className="home-nav">
+          {/* <ul className="home-nav">
             <li onClick={() => handleClick("/")}>Project</li>
             <li onClick={() => handleClick("/")}>Experience</li>
             <li onClick={() => handleClick("/")}>Education</li>
-          </ul>
+          </ul> */}
+
+          <a download href="./Bryan Jonathan CV.pdf" className="cv-button">
+            Resume <FiDownload />
+          </a>
+
         </div>
       </div>
 
@@ -84,8 +92,6 @@ export default function Home() {
           ))}
         </div>    
       </div>
-
-      
 
         <Footer />
     </div>

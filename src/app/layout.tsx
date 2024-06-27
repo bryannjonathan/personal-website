@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
 import { Roboto } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 // TODO: maybe considering change the font?
 import "./globals.css";
 
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fonts.className}>{children}</body>
+      <body className={fonts.className}>
+        <Toaster />
+        {children}
+      </body>
     </html>
   );
 }

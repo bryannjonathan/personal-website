@@ -3,6 +3,9 @@ import { projProps } from '@/types';
 import Link from 'next/link';
 import "./projectCard.css";
 
+// TODO: Add link icon to the title for github, and make the title clickable also
+// i think make the title clickable instead of the picture
+
 const ProjectCard = ({ name, imgUrl, subtitle, applink, github, }: projProps) => {
     const content = (
         <div className="project-card">
@@ -25,6 +28,7 @@ const ProjectCard = ({ name, imgUrl, subtitle, applink, github, }: projProps) =>
                     </>
                 )}
             </div>
+            
             <h1 className="project-title">{name}</h1> {/* Added title here */}
         </div>
     );
