@@ -97,7 +97,7 @@ body {
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
   font-size: 1.5rem;
   display: inline-flex; /* Added to align the button inline with the text */
-  align-items: center; /* Ensures vertical alignment */
+  align-items: center; 
 }
 
 .cv-button svg {

@@ -1,35 +1,28 @@
 import React from 'react';
 import { projProps } from '@/types';
-import Link from 'next/link';
 import "./projectCard.css";
 
-// TODO: Add link icon to the title for github, and make the title clickable also
-// i think make the title clickable instead of the picture
+import { FiExternalLink } from "react-icons/fi";
 
 const ProjectCard = ({ name, imgUrl, subtitle, applink, github, }: projProps) => {
     const content = (
         <div className="project-card">
             <div className="project-image">
-                {github ? (
-                    <Link href={github} legacyBehavior>
-                        <a target="_blank" className="image-link">
-                            <img src={imgUrl} className="project-image" />
-                            <div className="overlay">
-                                <span className="project-subtitle">{subtitle}</span>
-                            </div>
-                        </a>
-                    </Link>
-                ) : (
-                    <>
-                        <img src={imgUrl} className="project-image" />
-                        <div className="overlay">
-                            <span className="project-subtitle">{subtitle}</span>
-                        </div>
-                    </>
-                )}
+                <img src={imgUrl} className="project-image" />
+                <div className="overlay">
+                    <span className="project-subtitle">{subtitle}</span>
+                </div>
             </div>
-            
-            <h1 className="project-title">{name}</h1> {/* Added title here */}
+
+            {github ? (
+                <h1 className="project-title">
+                    <a href={github} target="_blank" rel="noopener noreferrer" className="title-link">
+                        {name} <FiExternalLink className="external-link-icon" />
+                    </a>
+                </h1>
+            ) : (
+                <h1 className="project-title">{name}</h1>
+            )}
         </div>
     );
 

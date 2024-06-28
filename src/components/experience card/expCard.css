@@ -1,3 +1,10 @@
+
+
+.exp-date-container{
+    width: 20em;
+}
+
+
 .exp-card-container {
     display: flex;
     align-items: center;

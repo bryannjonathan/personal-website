@@ -19,6 +19,14 @@ const expList = [
         ]
     },
     {
+        place: "TechnoScape Hackathon 5.0",
+        position: "Participant",
+        startDate: "05/2022",
+        desc: [
+            "Worked in a team of four to design a website for puraching video game currency",
+        ]
+    },
+    {
         place: "Raffles Peduli with Regina Realty",
         position: "Logistics",
         startDate: "10/2019",
