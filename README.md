@@ -1,9 +1,10 @@
 # Bryan Jonathan's Personal Wesbite
 
 Welcome to the repository for my personal website.
+https://bryanjonathan.netlify.app/
 
 ## Description
-This is my personal portfolio website, built to showcase my work, projects, and experiences. The website is created using Next.js, with some additional styling and components from React Icons and React Toast.
+This is my personal portfolio website, built to showcase my work, projects, and experiences. The website is created using Next.js, with some additional styling and components from React Icons and React Toast. The website is deployed on netlify.
 
 ## Features
 - Home page with my name and resume download link
