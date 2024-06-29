@@ -1,12 +1,12 @@
 
 const expList = [
     {
-        place: "InvestSync CUHKSZ",
+        place: "InvestSync",
         position: "Web Developer",
         startDate: "03/2024",
         endDate: "Present",
         desc: [
-            "Developing and designing the official website for InvestSync",
+            "Developing and designing the official website for InvestSync, an investment club in CUHK(SZ)",
         ]
     },
     {

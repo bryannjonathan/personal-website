@@ -6,9 +6,9 @@ import "./eduCard.css";
 export default function EducationCard({ schoolname, imgUrl, startDate, endDate, achievements, location, degree }: eduProps) {
     return (
         <div className="edu-card-container">
-            <div className="edu-image-container">
+            {/* <div className="edu-image-container">
                 <Image src={imgUrl} width={450} height={450} alt="school image" className="school-image"/>
-            </div>
+            </div> */}
             <div className="edu-text-container">
                 <h1 className="school-name">{schoolname}</h1>
                 <h2 className="degree">{degree}</h2>

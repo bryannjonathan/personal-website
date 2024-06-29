@@ -1,10 +1,15 @@
 .project-card {
   text-align: center; /* Center align text within the card */
   margin: 1rem;
+  /* background-color: #222222; */
+  background-color: #f2f2f2;
+  border-radius: 12px; /* Adjusted border radius */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
 }
 
 .project-image {
   position: relative;
+  padding: 8px 8px 2px 8px;
 }
 
 .image-link {
@@ -14,7 +19,7 @@
 .project-image img {
   width: 100%;
   height: auto;
-  /* border-radius: 10px; */
+  border-radius: 12px; /* Adjusted border radius */
 }
 
 .overlay {
@@ -26,10 +31,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(34, 34, 34, 0.97);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   opacity: 0;
   transition: opacity 0.3s ease;
-  /* border-radius: 9px; */
 }
 
 .project-image:hover .overlay {
@@ -44,9 +50,9 @@
 }
 
 .project-title {
-  margin-top: 1rem;
   font-size: 2rem;
-  color: #f0f0f1;
+  /* color: #f0f0f1; */
+  color: black;
 }
 
 .title-link {

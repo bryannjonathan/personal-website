@@ -2,15 +2,23 @@ const projList = [
     {
         name: "TaskTodo",
         imgUrl: "/projects/tasktodo.png",
-        subtitle: "Full-stack CRUD To-do List Website",
+        subtitle: "Full-stack CRUD To-do List Website created using Next.js, Clerk, Prisma, and MongoDB",
         applink: "https://task-todo-woad.vercel.app/",
         github: "https://github.com/bryannjonathan/TaskTodo",
 
     },
     {
-        name: "A* Search Algorthm",
+        name: "Personal Website",
+        imgUrl: "/projects/personal-website.png",
+        subtitle: "Personal website created using Next.js",
+        applink: "https://bryanjonathan.netlify.app/",
+        github: "https://github.com/bryannjonathan/personal-website",
+
+    },
+    {
+        name: "A* Search Algorithm",
         imgUrl: "/projects/astar1.png",
-        subtitle: "Performed A* Search Algorithm to solve 6-puzzle game using Python",
+        subtitle: "Performed A* Search algorithm to solve 6-puzzle game using Python",
 
     },
     {
