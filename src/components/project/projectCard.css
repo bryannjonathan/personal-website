@@ -4,7 +4,7 @@
   /* background-color: #222222; */
   background-color: #f2f2f2;
   border-radius: 12px; /* Adjusted border radius */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
@@ -19,7 +19,8 @@
 .project-image img {
   width: 100%;
   height: auto;
-  border-radius: 12px; /* Adjusted border radius */
+  border-radius: 12px;
+  max-width: 100%;
 }
 
 .overlay {
@@ -50,7 +51,8 @@
 }
 
 .project-title {
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 3.1vh;
   /* color: #f0f0f1; */
   color: black;
 }

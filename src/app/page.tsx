@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="divider fade-in"></div>
+      {/* <div className="divider fade-in"></div> */}
 
       <div className="content-page fade-in">
         <div className="content-sidebar">
@@ -73,9 +73,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="divider fade-in"></div>
+      {/* <div className="divider fade-in"></div> */}
 
-      <div className="content-page fade-in">
+      <div className="content-page project fade-in">
+        <div className="content-sidebar">
+          <h1 className="content-title">PROJECT</h1>
+        </div>
+
         <div className="proj-content">
           {projList.map((project, index) => (
             <ProjectCard 
@@ -87,12 +91,10 @@ export default function Home() {
             />
           ))}
         </div>
-        <div className="content-sidebar">
-          <h1 className="content-title">PROJECT</h1>
-        </div>
+        
       </div>
 
-      <div className="divider fade-in"></div>
+      {/* <div className="divider fade-in"></div> */}
 
       <div className="content-page fade-in">
         <div className="content-sidebar">

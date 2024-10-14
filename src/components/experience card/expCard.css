@@ -21,22 +21,26 @@
 }
 
 .position {
-    font-size: 2.3em;
+    /* font-size: 2.3em; */
+    font-size: 3.2vh;
     font-weight: bold
 }
 
 .place {
-    font-size: 1.85em;
+    /* font-size: 1.85em; */
+    font-size: 2.5vh;
     
 }
 
 .exp-date {
-    font-size: 1.4em;
+    /* font-size: 1.4em; */
+    font-size: 2.5vh;
     /* margin: 0 0 15px 0; */
 }
 
 .exp-desc {
-    font-size: 1.2em; /* Adjusted font size */
+    /* font-size: 1.2em; */
+    font-size: 2.1vh;
     margin: 0;
     line-height: 1.5;
     padding-left: 20px; /* Indentation for bullets */

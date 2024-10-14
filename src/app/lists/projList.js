@@ -27,7 +27,7 @@ const projList = [
         subtitle: "Performed differential testing to find bugs in PIG intepreters",
     },
     {
-        name: "ESG Ratings for Companies",
+        name: "ESG Ratings Database",
         imgUrl: "/projects/esgrating.png",
         subtitle: "Worked in a team of four to develop a database to calculate and store ESG ratings for companies using Sqlite and Python",
     },
