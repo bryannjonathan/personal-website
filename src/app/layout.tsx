@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import { Koulen } from "next/font/google";
+import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ weight: "500", subsets: ["latin"] });
-const koulen = Koulen({ weight: "400", subsets: ["latin"] });
+// const koulen = Koulen({ weight: "400", subsets: ["latin"] });
+const roboto = Roboto({weight: "400", subsets: ["latin"]});
+const poppins= Poppins({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Bryan Jonathan",
@@ -19,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <Toaster />
         {children}
       </body>
