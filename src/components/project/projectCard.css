@@ -1,74 +1,94 @@
 .project-card {
-  text-align: center; /* Center align text within the card */
-  margin: 1rem;
-  /* background-color: #222222; */
-  background-color: #f2f2f2;
-  border-radius: 12px; /* Adjusted border radius */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .project-image {
   position: relative;
-  padding: 8px 8px 2px 8px;
-}
-
-.image-link {
-  display: block;
-}
-
-.project-image img {
   width: 100%;
-  height: auto;
-  border-radius: 12px;
-  max-width: 100%;
+  height: 100%;
 }
 
-.overlay {
+.project-overlay {
   position: absolute;
-  top: 0;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7) 70%, transparent);
+}
+
+.project-content {
+  position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(34, 34, 34, 0.97);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  padding: var(--padding-medium);
 }
 
-.project-image:hover .overlay {
-  opacity: 1;
-}
-
-.project-subtitle {
+.project-card h3 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--bold);
   color: white;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
-.project-title {
-  /* font-size: 2rem; */
-  font-size: 3.1vh;
-  /* color: #f0f0f1; */
-  color: black;
+.project-card p {
+  /* font-size: var(--font-size-normal); */
+  color: #e5e7eb;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.title-link {
-  text-decoration: none;
-  color: inherit;
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.technology-tag {
+  background-color: rgba(55, 65, 81, 0.8);
+  color: #e5e7eb;
+  font-size: var(--font-size-small);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.github-link,
+.app-link {
   display: inline-flex;
   align-items: center;
+  font-size: var(--font-size-normal);
+  gap: 0.25rem;
+  transition: color 0.3s;
 }
 
-.title-link:hover {
-  text-decoration: underline; /* Add underline on hover for GitHub links */
+.external-icon{
+  font-size: var(--font-size-normal);
 }
 
-.external-link-icon {
-  font-size: 1rem; /* Adjusted font size of the icon */
-  margin-left: 0.3rem; /* Space between title and icon */
+.github-link {
+  color: #d1d5db;
 }
+
+.github-link:hover {
+  color: var(--primary);
+}
+
+.app-link {
+  color: #60a5fa;
+}
+
+.app-link:hover {
+  color: #93c5fd;
+}
+

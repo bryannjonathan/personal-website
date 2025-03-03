@@ -86,10 +86,16 @@ export default function Home() {
 
       <div className="project-page">
         <h2 className="section-title">Project</h2>
-
         <div className="project-list">
-          
-
+          {projList.slice(0,4).map((project, index) => (
+            <ProjectCard 
+              key={index}
+              name={project.name}
+              imgUrl={project.imgUrl}
+              subtitle={project.subtitle}
+              github={project.github}
+            />
+          ))} 
         </div>
 
       </div>

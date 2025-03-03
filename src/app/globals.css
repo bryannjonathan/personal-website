@@ -9,7 +9,8 @@
   /* Colors */
   --background: #111111;
   --text-color: white;
-  --secondary: #66FFE8;
+  --primary: #66FFE8;
+  --secondary: #e5e7eb;
   /* --outline-color:  */
 
 
@@ -24,9 +25,9 @@
   /* Font sizes */
   --font-size-huge: 3.5rem;
   --font-size-large: 2.5rem;
-  --font-size-medium: 1.75rem;
-  --font-size-normal: 1.25rem;
-  --font-size-small: 1rem;
+  --font-size-semi-large: 1.75rem;
+  --font-size-medium: 1.25rem;
+  --font-size-normal: 1rem;
 
   /* Font weights */
   --regular: 400;
@@ -138,8 +139,8 @@ body{
 }
 
 .home-page h3{
-  font-size: var(--font-size-medium);
-  color: var(--secondary);
+  font-size: var(--font-size-semi-large);
+  color: var(--primary);
   font-weight: var(--semi-bold);
   letter-spacing: 1.5px;
 }
@@ -150,7 +151,7 @@ body{
   /* background-color: #333; */
   color: #fff;
   text-decoration: none;
-  font-size: var(--font-size-normal);
+  font-size: var(--font-size-medium);
   cursor: pointer;
   gap: 0.5rem;
   margin: var(--margin-small);
@@ -185,7 +186,7 @@ body{
 
 .social-icon:hover{
   transform: scale(1.05);
-  color: var(--secondary);
+  color: var(--primary);
   cursor: pointer;
 }
 
@@ -195,4 +196,18 @@ body{
   font-weight: var(--bold);
   letter-spacing: 1.25px;
   color: var(--text-color);
+}
+
+ /* Project section */
+.project-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--margin-large);
+  /* padding: 50px; */
+}
+
+@media(min-width: 768px){
+  .projects-grid{
+    grid-template-columns: 1fr 1fr;
+  }
 }

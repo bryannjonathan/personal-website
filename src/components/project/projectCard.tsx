@@ -1,32 +1,50 @@
 import React from 'react';
 import { projProps } from '@/types';
 import "./projectCard.css";
+import Image from 'next/image';
 
 import { FiExternalLink } from "react-icons/fi";
+import { GithubIcon } from 'lucide-react';
 
 const ProjectCard = ({ name, imgUrl, subtitle, applink, github, }: projProps) => {
-    const content = (
+    return(
         <div className="project-card">
             <div className="project-image">
-                <img src={imgUrl} className="project-image" />
-                <div className="overlay">
-                    <span className="project-subtitle">{subtitle}</span>
+                <Image
+                src={imgUrl || "/placeholder.svg"}
+                alt={`${name} project screenshot`}
+                layout="fill"
+                objectFit="cover"
+                />
+            </div>
+            <div className="project-overlay">
+                <div className="project-content">
+                <h3>{name}</h3>
+                <p>{subtitle}</p>
+                {/* <div className="project-technologies">
+                    {technologies.map((tech) => (
+                    <span key={tech} className="technology-tag">
+                        {tech}
+                    </span>
+                    ))}
+                </div> */}
+                <div className="project-links">
+                    {github && (
+                    <a href={github} target="_blank" rel="noopener noreferrer" className="github-link">
+                        <GithubIcon className="external-icon" />
+                    </a>
+                    )}
+                    {applink && (
+                    <a href={applink} target="_blank" rel="noopener noreferrer" className="app-link">
+                        <FiExternalLink size={16} /> Live Demo
+                    </a>
+                    )}
+                </div>
                 </div>
             </div>
-
-            {github ? (
-                <h1 className="project-title">
-                    <a href={github} target="_blank" rel="noopener noreferrer" className="title-link">
-                        {name} <FiExternalLink className="external-link-icon" />
-                    </a>
-                </h1>
-            ) : (
-                <h1 className="project-title">{name}</h1>
-            )}
         </div>
-    );
-
-    return content;
+    )
+    
 };
 
 export default ProjectCard;
