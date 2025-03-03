@@ -32,7 +32,7 @@ export default function Home() {
         t.duration=3500
         return(
           <div className="toast-notif">
-            Email copied to clipboard
+            Email copied to clipboard!
           </div>
         )
       })
@@ -65,18 +65,18 @@ export default function Home() {
           <h1>Bryan Jonathan</h1>
           <p>Final Year CSE Student @CUHK(SZ)</p>
           <div className="social-links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/bryannjonathan" target="_blank" rel="noopener noreferrer">
               <Github />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/bryannjonathan/" target="_blank" rel="noopener noreferrer">
               <Linkedin />
             </a>
-            <a href="mailto:john@example.com">
+            <a onClick={copyLink}>
               <Mail />
             </a>
           </div>
           <a download href="./Bryan Jonathan CV.pdf" className="resume-button">
-            <FiDownload /> Resume
+            <FiDownload /> Download Resume
           </a>
         </div>
         <div className="scroll-indicator">
