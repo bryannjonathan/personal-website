@@ -1,15 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { IoLogoLinkedin, IoLogoGithub, IoMailUnread } from "react-icons/io5";
 import { Github, Linkedin, Mail, Download, ChevronDown } from "lucide-react";
 import toast from "react-hot-toast";
+import Link from "next/link";
 
 // components
 import Footer from "@/components/footer/footer";
 import ExpCard from "@/components/experience card/expCard";
 import ProjectCard from "@/components/project/projectCard";
 import EducationCard from "@/components/education card/educationCard";
+// import { Button } from "@/components/ui/button";
 
 // list
 import schoolList from "./lists/educationList";
@@ -19,6 +21,9 @@ import expList from "./lists/expList";
 import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
+  const flashlightRef = useRef<HTMLDivElement>(null)
+
+
   const copyLink = () => {
     try{
       navigator.clipboard.writeText("24jonathan.bryan@gmail.com");
@@ -36,70 +41,79 @@ export default function Home() {
     }  
   }
 
-  // dim light behind cursor (flashlight)
-  const [position, setPosition] = useState({ x:0, y:0});
-  
-  useEffect(() => {
-    const updateMousePosition = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-    };
+  // useEffect(() => {
+  //   const handleMouseMove = (e: MouseEvent) => {
+  //     if (flashlightRef.current) {
+  //       flashlightRef.current.style.left = `${e.clientX}px`
+  //       flashlightRef.current.style.top = `${e.clientY}px`
+  //     }
+  //   }
 
-    window.addEventListener("mousemove", updateMousePosition);
-    return () => window.removeEventListener("mousemove", updateMousePosition);
-    
-  }, []);
+  //   window.addEventListener("mousemove", handleMouseMove)
+
+  //   return () => {
+  //     window.removeEventListener("mousemove", handleMouseMove)
+  //   }
+  // }, []) 
 
   return (
-    <div className="web-page">
-      {/* Flashlight effect */}
-      <div
-        className="flashlight"
-        style={{ top: position.y-100, left: position.x-100 }}
-      >
-      </div>
+    <main className="home">
+      {/* <div ref={flashlightRef} className="flashlight"></div> */}
 
-      <div className="home-page">
-        <div className="content">
+      <section className="hero">
+        <div className="hero-content">
           <h1>Bryan Jonathan</h1>
-          {/* <h3>Final-year Computer Science Student at The Chinese University of Hong Kong, Shenzhen</h3> */}
-          <h3>Senior @CUHK(SZ)</h3>
-          <a download href="./Bryan Jonathan CV.pdf" className="cv-button">
-            Resume <FiDownload />
+          <p>Final Year CSE Student @CUHK(SZ)</p>
+          <div className="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <Github />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <Linkedin />
+            </a>
+            <a href="mailto:john@example.com">
+              <Mail />
+            </a>
+          </div>
+          <a download href="./Bryan Jonathan CV.pdf" className="resume-button">
+            <FiDownload /> Resume
           </a>
-          <ul className="social-links">
-                <li>
-                  <a href="https://github.com/bryannjonathan">
-                    <Github className="social-icon"/>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/bryannjonathan/">
-                    <Linkedin className="social-icon"/>
-                  </a>
-                </li>
-                <li onClick={copyLink}>
-                  <Mail className="social-icon"/>
-                </li>
-            </ul>
         </div>
-      </div>
-
-      <div className="project-page">
-        <h2 className="section-title">Project</h2>
-        <div className="project-list">
-          {projList.slice(0,4).map((project, index) => (
-            <ProjectCard 
-              key={index}
-              name={project.name}
-              imgUrl={project.imgUrl}
-              subtitle={project.subtitle}
-              github={project.github}
-            />
-          ))} 
+        <div className="scroll-indicator">
+          <ChevronDown />
         </div>
+      </section>
 
+      <div className="container">
+        <section className="projects-section">
+          <h2>Featured Projects</h2>
+          <div className="projects-grid">
+            {projList.slice(0,4).map((project, index) => (
+              <ProjectCard 
+                key={index} 
+                name={project.name}
+                imgUrl={project.imgUrl}
+                subtitle={project.subtitle}
+                github={project.github}
+              />
+            ))}
+            
+          </div>
+          <div className="see-more-button">
+            <Link href="/projects" passHref>
+              {/* <Button variant="outline">See More Projects</Button> */}
+            </Link>
+          </div>
+        </section>
+
+        {/* <section className="experience-section">
+          <h2>Experience</h2>
+          <ExperienceTimeline />
+        </section> */}
       </div>
+    </main>
+  )
 
-    </div>
-  );
+
+  
 }
