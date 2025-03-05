@@ -85,14 +85,15 @@ body{
   margin-bottom: 1.5rem;
   animation: fadeIn 1.2s ease-out;
   letter-spacing: 0.1em;
-  background: linear-gradient(90deg, #60a5fa, #34d399); /* Blue to teal gradient */
+  /* background: linear-gradient(90deg, #60a5fa, #34d399); */
+  background: linear-gradient(90deg, #4095FF, #66FFE8);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
   padding: 0.25rem 0;
   background-size: 200%;
-  animation: fadeIn 1.2s ease-out, gradientScroll 5s linear infinite; /* Add the gradient scroll animation */
+  animation: fadeIn 1.2s ease-out, gradientScroll 3s linear infinite; /* Add the gradient scroll animation */
 }
 
 .social-links {

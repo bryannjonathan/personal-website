@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import { IoLogoLinkedin, IoLogoGithub, IoMailUnread } from "react-icons/io5";
 import { Github, Linkedin, Mail, Download, ChevronDown } from "lucide-react";
 import toast from "react-hot-toast";
@@ -11,7 +11,7 @@ import Footer from "@/components/footer/footer";
 import ExpCard from "@/components/experience card/expCard";
 import ProjectCard from "@/components/project/projectCard";
 import EducationCard from "@/components/education card/educationCard";
-// import { Button } from "@/components/ui/button";
+import ParticlesBackground from "@/components/particle background/particleBackground";
 
 // list
 import schoolList from "./lists/educationList";
@@ -22,7 +22,6 @@ import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
   const flashlightRef = useRef<HTMLDivElement>(null)
-
 
   const copyLink = () => {
     try{
@@ -58,6 +57,7 @@ export default function Home() {
 
   return (
     <main className="home">
+      <ParticlesBackground />
       {/* <div ref={flashlightRef} className="flashlight"></div> */}
 
       <section className="hero">
