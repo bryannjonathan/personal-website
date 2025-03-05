@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { FiExternalLink } from "react-icons/fi";
 import { GithubIcon } from 'lucide-react';
 
-const ProjectCard = ({ name, imgUrl, subtitle, applink, github, }: projProps) => {
+const ProjectCard = ({ name, imgUrl, subtitle, applink, github, technologies }: projProps) => {
     return(
         <div className="project-card">
             <div className="project-image">
@@ -21,13 +21,13 @@ const ProjectCard = ({ name, imgUrl, subtitle, applink, github, }: projProps) =>
                 <div className="project-content">
                 <h3>{name}</h3>
                 <p>{subtitle}</p>
-                {/* <div className="project-technologies">
-                    {technologies.map((tech) => (
+                <div className="project-technologies">
+                    {technologies?.map((tech) => (
                     <span key={tech} className="technology-tag">
                         {tech}
                     </span>
                     ))}
-                </div> */}
+                </div>
                 <div className="project-links">
                     {github && (
                     <a href={github} target="_blank" rel="noopener noreferrer" className="github-link">

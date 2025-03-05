@@ -101,7 +101,7 @@ export default function Home() {
           </div>
           <div className="see-more-button">
             <Link href="/projects" passHref>
-              {/* <Button variant="outline">See More Projects</Button> */}
+              <p className="goback-button">See More Projects</p>
             </Link>
           </div>
         </section>

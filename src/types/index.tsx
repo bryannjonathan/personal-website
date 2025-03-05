@@ -32,6 +32,7 @@ export interface projProps{
     subtitle?: string,
     applink?: string,
     github?: string,
+    technologies?: string[],
     // desc?: string[],
 }
 

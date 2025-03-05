@@ -1,0 +1,96 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+
+
+.projects-page {
+  min-height: 100vh;
+  /* background-color: black; */
+  background-color: #111111;
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.header button {
+  background-color: transparent;
+  color: #60a5fa;
+  border: 1px solid #60a5fa;
+}
+
+.header button:hover {
+  background-color: #60a5fa;
+  color: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.back-button {
+  /* background-color: #1f2937; */
+  background-color: transparent;
+  /* color: white; */
+  color: var(--primary);
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.5rem;
+  /* margin: 1rem; */
+  padding: 0.5rem;
+
+  /* border: 0.7px solid white; */
+  border: 0.7px solid var(--primary);
+  border-radius: 5px;
+
+  transition:
+    color 0.1s,
+    background-color 0.1s ,
+    border-color 0.3s;
+
+}
+
+.back-button:hover {
+  /* background-color: transparent; */
+  background-color: var(--primary);
+  color: black;
+  /* border-color: var(--primary); */
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
