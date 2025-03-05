@@ -63,7 +63,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-content">
           <h1>Bryan Jonathan</h1>
-          <p>Final Year CSE Student @CUHK(SZ)</p>
+          <p className="title">Full Stack Developer</p>
           <div className="social-links">
             <a href="https://github.com/bryannjonathan" target="_blank" rel="noopener noreferrer">
               <Github />
