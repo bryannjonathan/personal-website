@@ -126,6 +126,8 @@ export default function Home() {
           <ExperienceTimeline />
         </section> */}
       </div>
+
+      <Footer />
     </main>
   )
 

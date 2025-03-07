@@ -1,55 +1,102 @@
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em 0;
+  background-color: #111827;
+  color: #e5e7eb;
+  padding: 3rem 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
   color: white;
-  width: 100%;
-  /* bottom: 1em; */
-  /* margin: 2rem; */
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
 }
 
-.social-icons {
-  list-style: none;
-  padding: 0 2vw;
+.footer-section h3::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 2rem;
+  height: 2px;
+  background-color: #4095ff;
+}
+
+.footer-section p {
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+}
+
+.footer-social-links {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
 
-.social-icons li {
-  margin: 0 1em;
-  color: white;
-  font-size: 3em;
-  transition: transform 0.3s;
-  display: flex;
-  align-items: center;
-}
-
-.social-link {
-  display: flex;
-  align-items: center;
-  color: white;
-  text-decoration: none;
-}
-
-.social-text {
-  font-size: 0.35em;
-  margin-left: 0.5em; /* Space between icon and text */
-}
-
-@media screen and (max-width: 1000px){
-  .social-text{
-    display: none;
-  }
-}
-
-.social-icons li:hover {
-  transform: translateY(-5px);
+.footer-social-links a {
+  color: #9ca3af;
+  transition: color 0.3s;
   cursor: pointer;
 }
 
-
-.toast-notif{
-  font-weight: 600;
+.footer-social-links a:hover {
+  color: #4095ff;
 }
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.copyright {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.back-to-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: color 0.3s;
+}
+
+.back-to-top:hover {
+  color: #4095ff;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
