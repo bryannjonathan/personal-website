@@ -4,7 +4,8 @@
 
 :root {
   --foreground-rgb: 229, 231, 235;
-  --primary: #66FFE8;
+  /* --primary: #66FFE8; */
+  --primary: #4095FF; 
   --subtitle: #9ca3af;
 }
 
@@ -41,7 +42,7 @@ html {
 }
 
 body{
-  background-color: #111111;
+  background-color: black;
 }
 
 

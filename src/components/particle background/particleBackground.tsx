@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Engine, Container } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim"; // Load slim version for better performance
+import "./particleBackground.css"
 
 const ParticlesBackground = () => {
   const [init, setInit] = useState(false);
@@ -38,21 +39,21 @@ const ParticlesBackground = () => {
             },
             fpsLimit: 60,
             interactivity: {
-              events: {
-                onClick: { enable: true, mode: "push" },
-                onHover: { enable: true, mode: "repulse" },
-                // resize: true,
-              },
-              modes: {
-                push: { quantity: 4 },
-                repulse: { distance: 200, duration: 0.4 },
-              },
+              // events: {
+              //   onClick: { enable: true, mode: "push" },
+              //   onHover: { enable: true, mode: "repulse" },
+              //   // resize: true,
+              // },
+              // modes: {
+              //   push: { quantity: 4 },
+              //   repulse: { distance: 200, duration: 0.4 },
+              // },
             },
             particles: {
-              color: { value: "#66FFE8" }, // Your primary color
+              color: { value: "#4095FF" }, // Your primary color
               links: {
-                color: "#66FFE8",
-                distance: 150,
+                color: "#4095FF",
+                distance: 120,
                 enable: true,
                 opacity: 0.2,
                 width: 1,
@@ -61,8 +62,8 @@ const ParticlesBackground = () => {
                 direction: "none",
                 enable: true,
                 outModes: { default: "bounce" },
-                random: true,
-                speed: 0.8,
+                random: false,
+                speed: 0.3,
                 straight: false,
               },
               number: {
@@ -73,7 +74,7 @@ const ParticlesBackground = () => {
                 },
                 value: 80,
               },
-              opacity: { value: 0.3 },
+              opacity: { value: 0.2 },
               shape: { type: "circle" },
               size: { value: { min: 1, max: 3 } },
             },
