@@ -36,3 +36,7 @@ export interface projProps{
     // desc?: string[],
 }
 
+export interface skillProps{
+    name: string,
+}
+

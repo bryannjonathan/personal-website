@@ -12,11 +12,13 @@ import ExpCard from "@/components/experience card/expCard";
 import ProjectCard from "@/components/project/projectCard";
 import EducationCard from "@/components/education card/educationCard";
 import ParticlesBackground from "@/components/particle background/particleBackground";
+import SkillCard from "@/components/skill card/skillCard";
 
 // list
 import schoolList from "./lists/educationList";
 import projList from "./lists/projList";
 import expList from "./lists/expList";
+import skillList from "./lists/skillList";
 
 import { FiDownload } from "react-icons/fi";
 
@@ -85,6 +87,19 @@ export default function Home() {
       </section>
 
       <div className="container">
+        <section className="skills-section">
+          <h2>Skills</h2>
+          <div className="skills-grid">
+            {skillList.map((skill, index) => (
+              <SkillCard 
+                key={index}
+                name={skill}
+              />
+            ))}  
+          </div>
+
+        </section>
+
         <section className="projects-section">
           <h2>Featured Projects</h2>
           <div className="projects-grid">
