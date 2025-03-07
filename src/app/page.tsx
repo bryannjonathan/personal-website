@@ -110,6 +110,8 @@ export default function Home() {
                 imgUrl={project.imgUrl}
                 subtitle={project.subtitle}
                 github={project.github}
+                technologies={project.technologies}
+                applink={project.applink}
               />
             ))}
             
@@ -130,7 +132,5 @@ export default function Home() {
       <Footer />
     </main>
   )
-
-
   
 }

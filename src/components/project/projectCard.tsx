@@ -12,9 +12,11 @@ export default function ProjectCard({
   github,
   applink,
 }: projProps) {
+  console.log(`tech: ${technologies}`)
+
   return (
     <div className="project-card">
-      <div className="progject-image">
+      <div className="project-image">
         <Image
           src={imgUrl || "/placeholder.svg"}
           alt={`${name} project screenshot`}
