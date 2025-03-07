@@ -9,7 +9,6 @@ export default function ProjectsPage() {
   return (
     <main className="projects-page">
       <ParticlesBackground />
-
       <div className="container">
         <div className="header">
           <h1>All Projects</h1>

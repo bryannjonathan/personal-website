@@ -7,6 +7,7 @@
   /* --primary: #66FFE8; */
   --primary: #4095FF; 
   --subtitle: #9ca3af;
+  --secondBg: rgba(31, 41, 55, 0.8);
 }
 
 @keyframes fadeIn {
@@ -117,7 +118,8 @@ body{
 /* TODO: style the resume button */
 .resume-button {
   /* background-color: #1f2937; */
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: var(--secondBg);
   color: var(white);
   display: inline-flex;
   cursor: pointer;
