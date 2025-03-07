@@ -72,11 +72,11 @@
 }
 
 .app-link {
-  color: #66ffe8;
+  color: var(--primary);
 }
 
 .app-link:hover {
-  color: #a5ffef;
+  color: #6aadff;
 }
 
 .project-image {
