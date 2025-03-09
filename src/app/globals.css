@@ -47,6 +47,13 @@ body{
 }
 
 
+.hero,
+.container{
+  position: relative;
+  z-index: 1;
+}
+
+
 .home {
   min-height: 100vh;
   /* background-color: #111111; */

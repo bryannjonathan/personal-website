@@ -4,6 +4,7 @@ import "./project-page.css"
 import ParticlesBackground from "@/components/particle background/particleBackground";
 
 import projList from "@/app/lists/projList";
+import Footer from "@/components/footer/footer";
 
 export default function ProjectsPage() {
   return (
@@ -29,6 +30,7 @@ export default function ProjectsPage() {
             ))}
         </div>
       </div>
+      <Footer />
     </main>
   )
 }
