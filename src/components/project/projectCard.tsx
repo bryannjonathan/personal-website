@@ -12,7 +12,7 @@ export default function ProjectCard({
   github,
   applink,
 }: projProps) {
-  console.log(`tech: ${technologies}`)
+  // console.log(`tech: ${technologies}`)
 
   return (
     <div className="project-card">
