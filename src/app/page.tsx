@@ -148,7 +148,7 @@ export default function Home() {
                     borderRadius: "0.5rem",
                   } }
                   contentArrowStyle= { { borderRight: '7px solid  rgb(31, 41, 55)' } }
-                  icon={<Luggage />}
+                  icon={exp.type === 'edu'? <GraduationCap /> : <Luggage />}
                   iconStyle={{
                     background: "#222222",
                     // background: "#4095FF",

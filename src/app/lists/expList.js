@@ -3,12 +3,14 @@ const expList = [
     {
         place: "InvestSync",
         position: "Web Developer",
+        type: "edu",
         date: "March 2024 - Present",
         desc: "Developing and designing the official website for InvestSync, an investment club in CUHK(SZ)",
     },
     {
         place: "Perhimpunan Pelajar Indonesia Tiongkong Shenzhen (PPITSZ)",
         position: "Member",
+        type: "edu",
         date: "September 2022 - June 2023",
         desc: "Part of IT and Academics team",
     },
@@ -23,6 +25,7 @@ const expList = [
     {
         place: "Raffles Peduli with Regina Realty",
         position: "Logistics",
+        type: "edu",
         date: "October 2019 - Febuary 2020",
         desc: "Prepared the logistics and venue to help students of lower income to learn English and Math every weekend",
     },
