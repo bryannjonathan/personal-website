@@ -21,6 +21,7 @@ export interface eduProps{
 export interface expProps{
     place: string,
     position: string,
+    type?: string,
     startDate: string,
     endDate?: string,
     desc: string[],

@@ -219,6 +219,7 @@ body{
   grid-template-columns: 1fr;
   gap: 2rem;
   margin-bottom: 2rem;
+
 }
 
 .see-more-button {
@@ -231,6 +232,41 @@ body{
   gap: 1rem;
 }
 
+/* Experience Section */
+.exp-component{
+  box-shadow: none;
+  border-bottom: none;
+}
+
+.exp-position{
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.exp-place{
+  font-size: 1.125rem;
+  color: var(--primary);
+  /* margin-bottom: 0.25rem; */
+  font-weight: 500;
+}
+
+.exp-date{
+  font-size: 0.875rem;
+  color: #9ca3af;
+  /* color: white; */
+  /* margin-bottom: 0.75rem; */
+}
+
+.exp-desc{
+  color: #d1d5db;
+  /* color: white; */
+  font-size: 1.05rem !important;
+  line-height: 2;
+  margin-top: 0;
+}
 
 @media (min-width: 768px) {
   .projects-grid {

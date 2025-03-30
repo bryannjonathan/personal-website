@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef, useCallback } from "react";
-import { IoLogoLinkedin, IoLogoGithub, IoMailUnread } from "react-icons/io5";
-import { Github, Linkedin, Mail, Download, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, Download, ChevronDown, GraduationCap, Luggage } from "lucide-react";
 import toast from "react-hot-toast";
 import Link from "next/link";
 
@@ -14,6 +13,9 @@ import EducationCard from "@/components/education card/educationCard";
 import ParticlesBackground from "@/components/particle background/particleBackground";
 import SkillCard from "@/components/skill card/skillCard";
 
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+
 // list
 import schoolList from "./lists/educationList";
 import projList from "./lists/projList";
@@ -21,6 +23,7 @@ import expList from "./lists/expList";
 import skillList from "./lists/skillList";
 
 import { FiDownload } from "react-icons/fi";
+import { ZIndex } from "@tsparticles/engine";
 
 export default function Home() {
   const flashlightRef = useRef<HTMLDivElement>(null)
@@ -56,6 +59,7 @@ export default function Home() {
   //     window.removeEventListener("mousemove", handleMouseMove)
   //   }
   // }, []) 
+  //
 
   return (
     <main className="home">
@@ -123,10 +127,45 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section className="experience-section">
+        <section className="experience-section">
           <h2>Experience</h2>
-          <ExperienceTimeline />
-        </section> */}
+          <VerticalTimeline
+            animate={false}
+            layout={'1-column-left'}
+          >
+            {
+              expList.map((exp, index) => (
+                <VerticalTimelineElement
+                  key={index}
+                  className="exp-component"
+                  date={exp.date}
+                  dateClassName="exp-date"
+                  contentStyle={ { 
+                    background: "rgba(31,41,55,0.8)",
+                    color: "#fff",
+                    boxShadow: "none",
+                    padding: "1.5rem",
+                    borderRadius: "0.5rem",
+                  } }
+                  contentArrowStyle= { { borderRight: '7px solid  rgb(31, 41, 55)' } }
+                  icon={exp.type === 'edu'? <GraduationCap /> : <Luggage />}
+                  iconStyle={{
+                    background: "#222222",
+                    // background: "#4095FF",
+                    color: "#4095FF",
+                    // border: "4px solid #4095FF"
+                  }}
+                >
+                  <h3 className="exp-position">{exp.position}</h3>
+                  <h4 className="exp-place">{exp.place}</h4>
+                  <p className="exp-desc">{exp.desc}</p>
+                </VerticalTimelineElement>
+              ))
+            }
+            
+          </VerticalTimeline>
+          
+        </section>
       </div>
 
       <Footer />
