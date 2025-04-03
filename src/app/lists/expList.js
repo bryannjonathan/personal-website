@@ -1,6 +1,20 @@
 
 const expList = [
     {
+        place: "School of Data Science (SDS) in CUHK(SZ)",
+        position: "Undegraduate Teaching Assistant for CSC3180: Fundamentals of AI",
+        type: "edu",
+        date: "January 2025 - Present",
+        desc: "Lead weekly tutorials sessions explaining course materials",
+    },
+    {
+        place: "Sun Never Sets Studio",
+        position: "Frontend Developer Intern",
+        // type: "edu",
+        date: "September 2024 - Present",
+        desc: "Developing a student forum",
+    },
+    {
         place: "InvestSync",
         position: "Web Developer",
         type: "edu",
