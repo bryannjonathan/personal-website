@@ -1,5 +1,19 @@
 const projList = [
     {
+        name:"Sayo Science Prototype",
+        imgUrl:"/projects/sayo_science.png",
+        subtitle:"Built a frontend prototype for a web-based education platform based on the official Hong Kong Education Bureau data",
+        github:"https://github.com/bryannjonathan/sayo_science_proto",
+        technologies:["Next.js", "Tailwind CSS", "TypeScript", "Python", "Git"]
+    },
+    {
+        name:"Fake Review Detection",
+        imgUrl:"/projects/fake_review.png",
+        subtitle:"Machine learning project that detects fake reviews using NLP techniques and classification models",
+        github:"https://github.com/bryannjonathan/fake-review-detection",
+        technologies:["Python", "Jupyter Notebook", "Pandas", "NumPy", "Scikit-learn", "NLTK", "XGBoost", "Random Forest"],
+    },
+    {
         name: "Investory",
         imgUrl: "/projects/investory.png",
         subtitle: "Full-stack mobile application that lets users create and manage investments portfolios",
@@ -8,11 +22,9 @@ const projList = [
 
     },
     {
-        name: "AI Academic Tools Platform",
+        name: "Sayo Academy",
         imgUrl: "/projects/capstone.png",
-        subtitle: "Colaborative project with Applied Artificial Intelligence Laboratory (AAIL) to build a web platform offering AI powered tools for teachers and students",
-        // applink: "https://bryanjonathan.netlify.app/",
-        // github: "https://github.com/bryannjonathan/personal-website",
+        subtitle: "Assisted AAIL in building web education platform, by building AI-powered tools to help teachers and students in academics ",
         technologies: ["Next.js", "React", "TypeScript", "Git"]
 
     },
