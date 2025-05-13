@@ -1,24 +1,31 @@
 
 const expList = [
     {
-        place: "School of Data Science (SDS) in CUHK(SZ)",
-        position: "Undegraduate Teaching Assistant for CSC3180: Fundamentals of AI",
+        place: "Applied Artificial Intelligence Laboratory (AAIL)",
+        position: "Capstone Project Member",
         type: "edu",
-        date: "January 2025 - Present",
+        date: "January 2025 - May 2025",
+        desc: "Collaborated with AAIL to web platform to enhance learning for students and teachers in Hong Kong"
+    },
+    {
+        place: "School of Data Science (SDS) in CUHK(SZ)",
+        position: "Undegraduate Teaching Assistant for CSC3180 Fundamentals of AI",
+        type: "edu",
+        date: "January 2025 - May 2025",
         desc: "Lead weekly tutorials sessions explaining course materials",
     },
     {
         place: "Sun Never Sets Studio",
         position: "Frontend Developer Intern",
         // type: "edu",
-        date: "September 2024 - Present",
+        date: "September 2024 - May 2025",
         desc: "Developing a student forum",
     },
     {
         place: "InvestSync",
         position: "Web Developer",
         type: "edu",
-        date: "March 2024 - Present",
+        date: "March 2024 - May 2025",
         desc: "Developing and designing the official website for InvestSync, an investment club in CUHK(SZ)",
     },
     {
