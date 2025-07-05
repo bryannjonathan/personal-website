@@ -42,6 +42,7 @@ export default function Footer() {
             <h3>Contact</h3>
             <p>Email: 24jonathan.bryan@gmail.com</p>
             <p>Phone: (86) 15012485190</p>
+            <p>WA: +62 87877100063</p>
           </div>
 
           <div className="footer-section">
