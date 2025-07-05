@@ -1,25 +1,24 @@
-
 const expList = [
     {
         place: "Applied Artificial Intelligence Laboratory (AAIL)",
         position: "Capstone Project Member",
         type: "edu",
         date: "January 2025 - May 2025",
-        desc: "Collaborated with AAIL to web platform to enhance learning for students and teachers in Hong Kong"
+        desc: "Collaborated with AAIL to develop Sayo Academy, an AI-powered educational platform to help students learn and teachers teach more effectively"
     },
     {
         place: "School of Data Science (SDS) in CUHK(SZ)",
         position: "Undegraduate Teaching Assistant for CSC3180 Fundamentals of AI",
         type: "edu",
         date: "January 2025 - May 2025",
-        desc: "Lead weekly tutorials sessions explaining course materials",
+        desc: "Led weekly tutorials sessions explaining lecture materials",
     },
     {
         place: "Sun Never Sets Studio",
         position: "Frontend Developer Intern",
         // type: "edu",
         date: "September 2024 - May 2025",
-        desc: "Developing a student forum",
+        // desc: "Developing",
     },
     {
         place: "InvestSync",
